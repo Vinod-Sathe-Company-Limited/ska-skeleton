@@ -49,8 +49,8 @@ list_dependencies:
       - public
 
 code_quality:
-  tags:
-    - docker-executor
+ # tags:
+ #   - docker-executor
   image: docker:stable
   variables:
     DOCKER_DRIVER: overlay2
