@@ -72,13 +72,15 @@ code_quality:
 
 
 code_analysis:
+  tags:
+   - docker-executor
   script:
     - pipenv run bash code-analysis.sh
     
 pages:
   stage: deploy
   tags:
-   - docker-executor
+   - docker-executor #Vinod
   dependencies:
     - test
   script:
